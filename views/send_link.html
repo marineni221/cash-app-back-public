@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Link</title>
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      a {
+        padding: 6px 12px;
+        border-radius: 6px;
+        background-color: #1b85ff;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+      }
+
+      .container {
+        width: 600px;
+      }
+
+      .container p {
+        line-height: 1;
+      }
+
+      .title {
+        font-size: larger;
+        font-weight: 700;
+        color: #1b85ff;
+      }
+
+      .paragraph-2 {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Bonjour {{name}}</h3>
+      <p>
+        Vous avez demandé à réinitialiser votre mot de passe pour
+        <span class="title">CashApp</span>.
+      </p>
+
+      <p class="paragraph-2">
+        Pour ce faire, veuillez Cliquez sur le lien ci-dessous pour
+        réinitialiser votre mot de passe :
+      </p>
+
+      <a href="{{link}}" style="color: #fff;">Créer un nouveau mot de passe</a>
+    </div>
+  </body>
+</html>
